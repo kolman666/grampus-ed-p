@@ -1,0 +1,519 @@
+
+/* поменять шрифт на всех кнопках и в продукции, в продукции на кнопках анимку сделать, попытаться ебнуть полоски, пофиксить бг на производстве, сделать текст свяжитесь с нами в одну строку, адаптив и модальные окна (с гпт) *\
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сила вологодских недр</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&family=Onest:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/actual logo.png" alt="Логотип">
+                </div>
+                <div class="city">
+                    <img src="./images/Map_Pin.png" alt="Вологда">
+                    <p class="p3">г. Вологда</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="#">ПРОДУКЦИЯ</a></li>
+                        <li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+                        <li><a href="#">ГДЕ КУПИТЬ</a></li>
+                        <li><a href="#">ПАРТНЁРЫ</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-info">
+                    <div class="phone">8 951 735-70-87</div>
+                    <a href="#" class="callback">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div class="text-content">
+                    <h1>Минеральная <br />серия</h1>
+                    <div class="description">
+                        <p class="p1">
+                            Косметика для тела, лица и волос. <br />В основе косметики — уникальная лечебная <br />минеральная вода, богатая природными <br />микроэлементами
+                        </p>
+                    </div>
+                    <a href="#products" class="cta-button">ПЕРЕЙТИ К ПРОДУКЦИИ</a>
+                    <div class="source-info">
+                        <h6>ИСТОЧНИК ВОД</h6>
+                        <p class="p3">скважина №3/65, месторождение «Турундаевское» г. Вологда</p>
+                    </div>
+                </div>
+                <div class="images-container">
+                    <div class="image-content">
+                        <img src="images/main-rocks.png" alt="Минеральная серия продуктов" class="product-image-m">
+                        <button class="slider-btn prev">←</button>
+                        <button class="slider-btn next">→</button>
+                        <div class="slider-nav">
+                            <span class="slider-dot active"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                        </div>
+                    </div>
+                    <div class="secondary-image">
+                        <img src="./images/pr-m-s.png" alt="Продукт" class="side-image">
+                        <img src="./images/Этикетки.png" alt="какая то фигня" class="undercover">
+                        <div class="wave-decoration"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-buttons">
+                <button class="social-btn telegram">
+                    <img src="./images/telegram-svgrepo-com (1) 2.svg" alt="Telegram">
+                </button>
+                <button class="social-btn whatsapp">
+                    <img src="./images/whatsapp-svgrepo-com (1) 1.svg" alt="WhatsApp">
+                </button>
+                <button class="social-btn vk">
+                    <img src="./images/vk-svgrepo-com 1.svg" alt="VK">
+                </button>
+            </div>
+
+            <section class="products-recipe">
+                <div class="products-intro">
+                    <div class="wave-icon"></div>
+                    <h2>НАШИ ПРОДУКТЫ<br>ИМЕЮТ ВОЛОГОДСКИЙ<br>КОЛОРИТ</h2>
+                    <img src="./images/этикетка.png" alt="Этикетка">
+                </div>
+                <div class="recipe-content">
+                    <h3 class="script-font">Это "своё, родное" </h3>
+                    <p class="recipe-text">
+                        В основе косметики — уникальная лечебная минеральная вода, богатая <br> природными микроэлементами. Секрет не только в особых микроэлементах, но и в <br> уровне pH, который совпадает с кожей — 5,5. Кислотный баланс воды из-под крана <br> выше, поэтому она сушит кожу и становится причиной воспалений
+                    </p>
+                    <p class="recipe-text">
+                        Состав воды и возможность её использования подтверждены сертификатами <br> соответствия. У нас сертифицированное ответственное производство, не <br> «домашний» розлив.
+                    </p>
+                    <a href="#" class="certificate-link">СМОТРЕТЬ СЕРТИФИКАТ →</a>
+                </div>
+            </section>
+            <div class="recipe-image">
+                <img src="./images/in-hand.png" alt="Продукт в руке">
+            </div>
+
+            <section id="products" class="products-section">
+                <h2 class="section-title">ПРОДУКЦИЯ</h2>
+                <div class="products-filter">
+                    <button class="filter-btn">ВСЕ</button>
+                    <button class="filter-btn">ДЛЯ ВОЛОС</button>
+                    <button class="filter-btn">ДЛЯ ТЕЛА</button>
+                    <button class="filter-btn">ДЛЯ ЛИЦА</button>
+                </div>
+                <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product1.png" alt="Товар">
+                        <div class="badges">
+                            <div class="badge">Новинка</div>
+                            <div class="badge">Акция</div>
+                            <div class="badge">Хит продаж</div>
+                        </div>
+                        <div class="info-button">!</div>
+                    </div>
+                    <div class="product-info">
+                        <h2>Бальзам для <br>всех типов <br>волос, 400 мл</h2>
+                        <div class="price-container">
+                            <div class="price">350₽</div>
+                            <div class="old-price">380₽</div>
+                        </div>
+                        <button class="buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="pc2-product-card">
+                    <div class="pc2-product-image">
+                        <img src="./images/product2.png" alt="Товар">
+                        <div class="pc2-badges">
+                            <div class="pc2-badge">Новинка</div>
+                            <div class="pc2-badge">Акция</div>
+                            <div class="pc2-badge">Хит продаж</div>
+                        </div>
+                        <div class="pc2-info-button">!</div>
+                    </div>
+                    <div class="pc2-product-info">
+                        <h2>Бальзам для всех типов волос, 400 мл</h2>
+                        <div class="pc2-price-container">
+                            <div class="pc2-old-price">350₽</div>
+                            <div class="pc2-price">380₽</div>
+                        </div>
+                        <button class="pc2-buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="pc2-product-card">
+                    <div class="pc2-product-image">
+                        <img src="./images/product2.png" alt="Товар">
+                        <div class="pc2-badges">
+                            <div class="pc2-badge">Новинка</div>
+                            <div class="pc2-badge">Акция</div>
+                            <div class="pc2-badge">Хит продаж</div>
+                        </div>
+                        <div class="pc2-info-button">!</div>
+                    </div>
+                    <div class="pc2-product-info">
+                        <h2>Бальзам для всех типов волос, 400 мл</h2>
+                        <div class="pc2-price-container">
+                            <div class="pc2-old-price">350₽</div>
+                            <div class="pc2-price">380₽</div>
+                        </div>
+                        <button class="pc2-buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="pc2-product-card">
+                    <div class="pc2-product-image">
+                        <img src="./images/product2.png" alt="Товар">
+                        <div class="pc2-badges">
+                            <div class="pc2-badge">Новинка</div>
+                            <div class="pc2-badge">Акция</div>
+                            <div class="pc2-badge">Хит продаж</div>
+                        </div>
+                        <div class="pc2-info-button">!</div>
+                    </div>
+                    <div class="pc2-product-info">
+                        <h2>Бальзам для всех типов волос, 400 мл</h2>
+                        <div class="pc2-price-container">
+                            <div class="pc2-old-price">350₽</div>
+                            <div class="pc2-price">380₽</div>
+                        </div>
+                        <button class="pc2-buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="pc2-product-card">
+                    <div class="pc2-product-image">
+                        <img src="./images/product2.png" alt="Товар">
+                        <div class="pc2-badges">
+                            <div class="pc2-badge">Новинка</div>
+                            <div class="pc2-badge">Акция</div>
+                            <div class="pc2-badge">Хит продаж</div>
+                        </div>
+                        <div class="pc2-info-button">!</div>
+                    </div>
+                    <div class="pc2-product-info">
+                        <h2>Бальзам для всех типов волос, 400 мл</h2>
+                        <div class="pc2-price-container">
+                            <div class="pc2-old-price">350₽</div>
+                            <div class="pc2-price">380₽</div>
+                        </div>
+                        <button class="pc2-buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="pc2-product-card">
+                    <div class="pc2-product-image">
+                        <img src="./images/product2.png" alt="Товар">
+                        <div class="pc2-badges">
+                            <div class="pc2-badge">Новинка</div>
+                            <div class="pc2-badge">Акция</div>
+                            <div class="pc2-badge">Хит продаж</div>
+                        </div>
+                        <div class="pc2-info-button">!</div>
+                    </div>
+                    <div class="pc2-product-info">
+                        <h2>Бальзам для всех типов волос, 400 мл</h2>
+                        <div class="pc2-price-container">
+                            <div class="pc2-old-price">350₽</div>
+                            <div class="pc2-price">380₽</div>
+                        </div>
+                        <button class="pc2-buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./images/product1.png" alt="Товар">
+                        <div class="badges">
+                            <div class="badge">Новинка</div>
+                            <div class="badge">Акция</div>
+                            <div class="badge">Хит продаж</div>
+                        </div>
+                        <div class="info-button">!</div>
+                    </div>
+                    <div class="product-info">
+                        <h2>Бальзам для <br>всех типов <br>волос, 400 мл</h2>
+                        <div class="price-container">
+                            <div class="price">350₽</div>
+                            <div class="old-price">380₽</div>
+                        </div>
+                        <button class="buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+
+                <div class="pc2-product-card">
+                    <div class="pc2-product-image">
+                        <img src="./images/product2.png" alt="Товар">
+                        <div class="pc2-badges">
+                            <div class="pc2-badge">Новинка</div>
+                            <div class="pc2-badge">Акция</div>
+                            <div class="pc2-badge">Хит продаж</div>
+                        </div>
+                        <div class="pc2-info-button">!</div>
+                    </div>
+                    <div class="pc2-product-info">
+                        <h2>Бальзам для всех типов волос, 400 мл</h2>
+                        <div class="pc2-price-container">
+                            <div class="pc2-old-price">350₽</div>
+                            <div class="pc2-price">380₽</div>
+                        </div>
+                        <button class="pc2-buy-button">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+
+                
+                
+                <button class="show-more">ПОКАЗАТЬ ЕЩЁ</button>
+            </section>
+        </div>
+    
+        <section class="production">
+            <div class="container">
+               
+                    <h2 class="production-title">ПРОИЗВОДСТВО</h2>
+                    <p class="production-description">
+                        Более 65 лет на базе источника минеральной воды функционирует Вологодская бальнеолечебница, где успешно применяется лечение водой
+                    </p>
+            
+                    <div class="production-slider">
+                        <div class="slider-thumbnails">
+                            <img src="./images/pr1.png" alt="Продукт 1" class="slider-thumb">
+                            <img src="./images/pr2.png" alt="Продукт 2" class="slider-thumb">
+                        </div>
+                        <div class="slider-navigation">
+                            <button class="nav-btn prev">←</button>
+                            <button class="nav-btn next">→</button>
+                        </div>
+                        <div class="slider-main">
+                            <img src="./images/mf-big.png" alt="Основное изображение продукта" class="main-slide">
+                        </div>
+                    </div>
+            
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <h3 class="info-title">5,5 PH</h3>
+                            <p class="info-text">уровень кислотного баланса воды, который приемлем для жизнедеятельности человека, безопасный для кожи и глаз</p>
+                        </div>
+                        <div class="info-block">
+                            <h3 class="info-title">В 2023 Г.</h3>
+                            <p class="info-text">проведены испытания Испытательным арбитражным центром Главного экспертно-аналитического центра «СОЭКС» АНО «СОЮЗЭКСПЕРТИЗА» Торгово-промышленной палаты Российской Федерации и получено согласование на использование данной редкой воды в качестве основы для производства косметологических средств под маркой «Минеральная серия»</p>
+                        </div>
+                    </div>
+                </div>
+        
+        </section>
+
+        <section class="payment-delivery">
+            <div class="container">
+                <div class="payment-section">
+                    <h2>ОПЛАТА</h2>
+                    <p class="section-description">
+                        Для оформления заказа оставьте заявку на сайте, заполнив форму: имя, <br>номер телефона. После заявки мы свяжемся с Вами и отправим заказ. <br>Или можно сделать заказ на маркетплейсах
+                    </p>
+                    <div class="options-list">
+                        <h3>Варианты оплаты на выбор:</h3>
+                        <ul>
+                            <li>Наличными при доставке</li>
+                            <li>Банковской картой при получении заказа</li>
+                            <li>Переводом по банковской карте</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="./images/payment-pr.png" alt="sgfhghdfgh" class="payment-img">
+                
+                <div class="delivery-section">
+                    <h2>ДОСТАВКА</h2>
+                    <p class="section-description">
+                        Доставляем заказы по всей России 5-7дней. По г. Вологда и Вологодской <br> области 1-2 дня
+                    </p>
+                    <div class="options-list">
+                        <h3>Варианты доставки на выбор:</h3>
+                        <ul>
+                            <li>Почта России — 700 ₽</li>
+                            <li>Самовывоз — бесплатно</li>
+                            <li>Доставка ТК — 400 ₽</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="./images/delivery-pr.png" alt="a" class="delivery-img">
+                <img src="./images/Этикетки.png" alt="какая то фигня" class="undercover2">
+            </div>
+        </section>
+
+        <section class="where-to-buy">
+            <div class="container">
+                <h2>ГДЕ КУПИТЬ</h2>
+                
+                <div class="marketplaces">
+                    <a href="#" class="marketplace-link">
+                        <img src="./images/wb.png" alt="Wildberries" class="marketplace-logo">
+                        <span class="marketplace-name">Wildberries</span>
+                        <span class="link-text">ПЕРЕЙТИ →</span>
+                    </a>
+                    
+                    <a href="#" class="marketplace-link">
+                        <img src="./images/ozon.png" alt="Ozon" class="marketplace-logo">
+                        <span class="marketplace-name">Ozon</span>
+                        <span class="link-text">ПЕРЕЙТИ →</span>
+                    </a>
+                    
+                    <a href="#" class="marketplace-link">
+                        <img src="./images/yamark.png" alt="Яндекс.Маркет" class="marketplace-logo">
+                        <span class="marketplace-name">Яндекс.Маркет</span>
+                        <span class="link-text">ПЕРЕЙТИ →</span>
+                    </a>
+                </div>
+
+                <div class="physical-stores">
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h3>ТОРГОВЫЙ ЦЕНТР «ФОРУМ»</h3>
+                            <p class="address">г. Вологда, ул. Ленинградская, д. 100</p>
+                            <p class="floor">Мы находимся на 2 этаже</p>
+                        </div>
+                    </div>
+
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h3>ТОРГОВЫЙ ЦЕНТР «ФОРУМ»</h3>
+                            <p class="address">г. Вологда, ул. Ленинградская, д. 100</p>
+                            <p class="floor">Мы находимся на 2 этаже</p>
+                        </div>
+                    </div>
+
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h3>ТОРГОВЫЙ ЦЕНТР «ФОРУМ»</h3>
+                            <p class="address">г. Вологда, ул. Ленинградская, д. 100</p>
+                            <p class="floor">Мы находимся на 2 этаже</p>
+                        </div>
+                    </div>
+
+                    <div class="store-item">
+                        <div class="store-info">
+                            <h3>ТОРГОВЫЙ ЦЕНТР «ФОРУМ»</h3>
+                            <p class="address">г. Вологда, ул. Ленинградская, д. 100</p>
+                            <p class="floor">Мы находимся на 2 этаже</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="show-more">ПОКАЗАТЬ ЕЩЁ</button>
+            </div>
+        </section>
+        
+        <section class="partners">
+            <div class="container">
+                <div class="partners-header">
+                    <h2>ПАРТНЁРЫ</h2>
+                    <div class="partners-navigation">
+                        <button class="nav-btn prev">←</button>
+                        <button class="nav-btn next">→</button>
+                    </div>
+                </div>
+                
+                <div class="partners-slider">
+                    <div class="partner-logo">
+                        <img src="./images/svn.png" alt="Сила вологодских недр">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/tbb.png" alt="To be bio">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/mzn.png" alt="MIZON">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/kokos.png" alt="КОКОС">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="./images/alya.png" alt="ALYA BEAUTY">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+                        
+                        <div class="contact-row">
+                            <div class="contact-block">
+                                <h3>Номер телефона</h3>
+                                <p class="phone">8 951 735-70-87</p>
+                                <p class="working-hours">Пн - Пт: с 09:00 до 19:00</p>
+                            </div>
+        
+                            <div class="contact-block">
+                                <h3>Электронная почта</h3>
+                                <a href="mailto:example@example.com" class="email">minser-market@mail.ru</a>
+                            </div>
+                        </div>
+        
+                        <div class="contact-row">
+                            <div class="company-info">
+                                <p>ООО «Сила Вологодских недр»</p>
+                                <p>ОГРНИП 000000000000000</p>
+                                <p>ИНН 000000000000</p>
+                            </div>
+
+                            <div class="contact-block">
+                                <h3>Пишите нам в мессенджерах</h3>
+                                <div class="social-links">
+                                    <a href="#" class="social-link telegram">
+                                        <img src="./images/telegram-svgrepo-com (1) 2.svg" alt="Telegram">
+                                    </a>
+                                    <a href="#" class="social-link whatsapp">
+                                        <img src="./images/whatsapp-svgrepo-com (1) 1.svg" alt="WhatsApp">
+                                    </a>
+                                    <a href="https://vk.com/kxlman" class="social-link vk">
+                                        <img src="./images/vk-svgrepo-com 1.svg" alt="VK">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-image">
+                        <img src="./images/footerpic.png" alt="Наша продукция">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+                    <div class="developer">
+                        <span>Сайт разработан</span>
+                        <a href="https://vk.com/kxlman" class="developer-link">kolman</a>
+                    </div>
+                    <div class="copyright">© 2024, Компания ООО «Сила Вологодских недр»</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
